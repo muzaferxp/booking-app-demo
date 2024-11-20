@@ -1,0 +1,28 @@
+
+Roles
+1. user
+    a. book a ride by selecting the vehicle as per requirement
+    b. track the ride (real time location)
+    b. view history
+
+2. driver
+    a. make available
+    b. recieve bookings
+    c. accept/reject bookings
+
+
+Schema
+User 
+    name, email
+
+Driver
+   name, email, vehicleType
+
+BookingRequests
+   userid, start_location, end_location, vehicleType
+
+Bookings
+   userid, driverid, start_time, opt
+
+DriverLocation
+   driverid, current_location
