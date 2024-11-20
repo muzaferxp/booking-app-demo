@@ -5,16 +5,13 @@ This is a simple booking API built using Flask that allows users to request book
 ## Table of Contents
 - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
-- [Usage with cURL](#usage-with-curl)
-- [Project Structure](#project-structure)
-- [License](#license)
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/flask-booking-api.git
-    cd flask-booking-api
+    git clone https://github.com/muzaferxp/booking-app-demo
+    cd booking-app-demo
     ```
 
 2. Set up a virtual environment:
@@ -72,14 +69,3 @@ This is a simple booking API built using Flask that allows users to request book
   - **GET** `/booking/details/<bookingId>`
   - Parameters:
     - `bookingId`: The ID of the booking
-
-## Usage with cURL
-
-You can use the following `curl` commands to interact with the API.
-
-### 1. Create a Booking Request
-```bash
-curl --location 'http://localhost:5000/bookingRequest' \
---form 'vehicleType="bike"' \
---form 'start_location="lat1,lon1"' \
---form 'end_location="lat2,lon2"'
